@@ -20,15 +20,27 @@ class MyApp extends StatelessWidget {
                 'Ignatkin Igor',
                 style: TextStyle(
                     fontFamily: 'Pacifico',
-                    fontSize: 40.0,
+                    fontSize: 50.0,
+                    letterSpacing: 3,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                    fontFamily: 'Source Sans Pro', color: Colors.teal.shade100),
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade100,
+                    fontSize: 20.0,
+                    letterSpacing: 3,
+                    fontWeight: FontWeight.bold),
               ),
+              Container(
+                child: Row(
+              children: <Widget>[
+              Icon(icon)
+              ],
+              ),
+                ),
             ],
           ),
         ),
