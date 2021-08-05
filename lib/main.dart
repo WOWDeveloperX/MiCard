@@ -36,11 +36,13 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 child: Row(
-              children: <Widget>[
-              Icon(icon)
-              ],
-              ),
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Icon(Icons.add_shopping_cart,
+                        size: 100, color: Colors.deepOrangeAccent)
+                  ],
                 ),
+              ),
             ],
           ),
         ),
