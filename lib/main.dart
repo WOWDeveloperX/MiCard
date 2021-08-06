@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: <Widget>[
               CircleAvatar(
-                  radius: 100.0,
+                  radius: 200.0,
                   backgroundImage: AssetImage('images/ignatkin.jpeg')),
               Text(
                 'Ignatkin Igor',
@@ -35,11 +35,40 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(8),
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(Icons.add_shopping_cart,
-                        size: 100, color: Colors.deepOrangeAccent)
+                    Icon(Icons.phone, size: 30, color: Colors.teal),
+                    SizedBox(width: 30),
+                    Text(
+                      '+7(977)-266-26-37',
+                      style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        color: Colors.teal.shade900,
+                        fontSize: 30.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(8),
+                margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.email, size: 30, color: Colors.teal),
+                    SizedBox(width: 10),
+                    Text(
+                      'wowDeveloperX@gmail.ru',
+                      style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        color: Colors.teal.shade900,
+                        fontSize: 30.0,
+                      ),
+                    ),
                   ],
                 ),
               ),
