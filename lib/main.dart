@@ -34,42 +34,34 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 3,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(8),
                 margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.phone, size: 30, color: Colors.teal),
-                    SizedBox(width: 30),
-                    Text(
-                      '+7(977)-266-26-37',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        color: Colors.teal.shade900,
-                        fontSize: 30.0,
-                      ),
+                child: ListTile(
+                  leading: Icon(Icons.phone, size: 30, color: Colors.teal),
+                  title: Text(
+                    '+7(977)-266-26-37',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      color: Colors.teal.shade900,
+                      fontSize: 30.0,
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(8),
                 margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email, size: 30, color: Colors.teal),
-                    SizedBox(width: 10),
-                    Text(
-                      'wowDeveloperX@gmail.ru',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        color: Colors.teal.shade900,
-                        fontSize: 30.0,
-                      ),
+                child: ListTile(
+                  leading: Icon(Icons.email, size: 30, color: Colors.teal),
+                  title: Text(
+                    'wowDeveloperX@gmail.ru',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      color: Colors.teal.shade900,
+                      fontSize: 27.5,
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
